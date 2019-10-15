@@ -1,0 +1,48 @@
+<h1>Pie Lazy</h1>
+<form [formGroup]="finalForm">
+  <div class="formField">
+    <div>
+      <label for="">area</label>
+    </div>
+    <input type="text" [formControl]="finalForm.controls.area">
+    <div class="error" *ngIf="finalForm.controls['area'].hasError('required')">
+      error 1
+    </div>
+    <div class="error" *ngIf="finalForm.controls['area'].hasError('errorCustom')">
+      error custom
+    </div>
+    <div class="error" *ngIf="finalForm.controls['area'].hasError('errorCustomA')">
+      error customA
+    </div>
+  </div>
+  <div class="formField">
+    <div>
+      <label for="">number</label>
+    </div>
+    <input type="text" [formControl]="finalForm.controls.number">
+    <div class="error" *ngIf="finalForm.controls['number'].hasError('required')">
+      error 1
+    </div>
+    <div class="error" *ngIf="finalForm.controls['number'].hasError('errorCustom')">
+      error custom
+    </div>
+    <div class="error" *ngIf="finalForm.controls['number'].hasError('errorCustomA')">
+      error customA
+    </div>
+    <div class="error" *ngIf="finalForm.errors.formCustomError">
+      error FormcustomA
+    </div>
+  </div>
+  <div class="formField" >
+    <div>
+      <label>exarea</label>
+    </div>
+    <input type="text" [formControl]="finalForm.controls.exarea">
+  </div>
+  <div class="formField">
+    <div>
+    <label>exnumber</label>
+    </div>
+    <input type="text" [formControl]="finalForm.controls.exnumber">
+  </div>
+</form>
