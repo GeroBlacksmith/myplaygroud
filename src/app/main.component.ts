@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { Router } from "@angular/router";
 
-
+import { siteContent } from "./strings/site-content";
 
 import { errorMessages } from "./strings/error-messages";
+
 @Component({
 selector:'app-main',
 template:`
-<h1>Main Component</h1>
+<h1>{{title}}</h1>
+<h2>Main Component</h2>
 <div>
   <button (click)="o()">navigate to pie</button>
 </div>
@@ -30,6 +32,8 @@ button:hover{
 `]
 })
 export class MainComponent{
+
+  title = siteContent.title;
   constructor(private router:Router){}
   o(){
     // this.router.navigate(['pie',{b:"c",d:1}]);

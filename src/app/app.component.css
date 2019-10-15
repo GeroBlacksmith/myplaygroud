@@ -30,3 +30,11 @@ nav ul li a{
   text-align: center;
   transition:300ms all ease;
 }
+.content{
+  height: 600px;
+}
+footer{
+  background:purple;
+  color:white;
+  text-align: center;
+}
