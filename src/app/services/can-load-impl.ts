@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Route, CanLoad, UrlSegment } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { Permissions } from './Permissions';
-import { Usertoken } from './user';
+import { Usertoken } from '../models/user';
 
 @Injectable()
 export class CanLoadImpl implements CanLoad{

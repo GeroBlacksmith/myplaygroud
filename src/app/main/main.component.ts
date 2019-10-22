@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from "@angular/router";
 
-import { siteContent } from "./strings/site-content";
+import { siteContent } from "../strings/site-content";
 
-import { errorMessages } from "./strings/error-messages";
+import { errorMessages } from "../strings/error-messages";
 
 @Component({
 selector:'app-main',
