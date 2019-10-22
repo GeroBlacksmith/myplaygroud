@@ -13,7 +13,6 @@ export class CustomValidator{
   }
   static formCustomValidator(number,exnumber):ValidatorFn{
     return (group:FormGroup):ValidationErrors => {
-      console.log(group);
       return {'formCustomError':true};
       return;
     }

@@ -7,29 +7,8 @@ import { errorMessages } from "../strings/error-messages";
 
 @Component({
 selector:'app-main',
-template:`
-<h1>{{title}}</h1>
-<h2>Main Component</h2>
-<div>
-  <button (click)="o()">navigate to pie</button>
-</div>
-<div>
-  <button (click)="showMessage()">Test Message</button>
-</div>
-  `,
-styles:[`
-button{ 
-  width:200px;
-  margin:10px;
-  border:none;
-  padding:10px;
-  transition:300ms all ease;
-  }
-button:hover{
-  background:#444;cursor:
-  pointer;color:white;
-  }
-`]
+templateUrl:'./main.component.html',
+styleUrls:['./main.component.css']
 })
 export class MainComponent{
 

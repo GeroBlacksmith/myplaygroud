@@ -1,0 +1,9 @@
+.card{
+  width:298px;
+  height: 320px;
+  border:black solid 1px;
+  margin:2px auto;
+}
+.slider{
+  display:flex;
+  flex-wrap:wrap;}
