@@ -1,11 +1,12 @@
-button{ 
-  width:200px;
-  margin:10px;
-  border:none;
-  padding:10px;
-  transition:300ms all ease;
-  }
-button:hover{
-  background:#444;cursor:
-  pointer;color:white;
-  }
+button {
+  width: 200px;
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  transition: 300ms all ease;
+}
+button:hover {
+  background: #444;
+  cursor: pointer;
+  color: white;
+}

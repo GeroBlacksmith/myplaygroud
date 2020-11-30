@@ -1,9 +1,12 @@
-.card{
-  width:298px;
+.card {
+  width: 298px;
   height: 320px;
-  border:black solid 1px;
-  margin:2px auto;
+  border: black solid 1px;
+  margin: 2px auto;
 }
-.slider{
-  display:flex;
-  flex-wrap:wrap;}
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: auto;
+}
